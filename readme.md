@@ -18,4 +18,8 @@ confluent login
 confluent kafka cluster list
 confluent kafka cluster use lkc-do1mzz  # replace with your cluster's id
 confluent kafka topic create purchases --partitions 1
+
+# in either order
+./run_producer.sh
+./run_consumer.sh
 ```
