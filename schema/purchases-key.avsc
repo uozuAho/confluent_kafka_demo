@@ -1,0 +1,12 @@
+{
+  "name": "PurchaseKey",
+  "type": "record",
+  "namespace": "com.mycorp.mynamespace",
+  "fields": [
+    {
+      "name": "User",
+      "type": "string",
+      "doc": "Name of the user"
+    }
+  ]
+}

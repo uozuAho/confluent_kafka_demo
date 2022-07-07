@@ -23,3 +23,13 @@ confluent kafka topic create purchases --partitions 1
 ./run_producer.sh
 ./run_consumer.sh
 ```
+
+# Schema registry (in progress)
+```sh
+export SCHEMA_REGISTRY_BASIC_AUTH_USER_INFO=<SR API KEY>:<SR API SECRET>
+export SCHEMA_REGISTRY_URL=<SR ENDPOINT>
+
+curl --silent -X GET -u $SCHEMA_REGISTRY_BASIC_AUTH_USER_INFO $SCHEMA_REGISTRY_URL/subjects | jq .
+
+# keep following https://docs.confluent.io/platform/current/schema-registry/schema_registry_ccloud_tutorial.html#using-curl-to-interact-with-schema-registry
+```
