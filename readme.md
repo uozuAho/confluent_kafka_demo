@@ -33,3 +33,7 @@ curl --silent -X GET -u $SCHEMA_REGISTRY_BASIC_AUTH_USER_INFO $SCHEMA_REGISTRY_U
 
 # keep following https://docs.confluent.io/platform/current/schema-registry/schema_registry_ccloud_tutorial.html#using-curl-to-interact-with-schema-registry
 ```
+
+## todo
+- fix broken producer - move schema registry config somewhere else
+- get producer consumer working. see: https://github.com/confluentinc/confluent-kafka-dotnet/blob/master/examples/AvroGeneric/Program.cs
